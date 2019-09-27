@@ -1,0 +1,141 @@
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    position: relative;
+}
+body {
+    background: radial-gradient(#ddd, #000) fixed;
+}
+a {
+    color: rgb(135, 177, 211);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(250, 132, 132);
+}
+
+/* container */
+.container {
+    width: 100%;
+    min-width: 280px;
+    max-width: 960px;
+    margin: auto;
+}
+
+/* header */
+header {
+    background: #1a001a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header > img {
+    display: block;
+    width: 5rem;
+    height: auto;
+    margin-right: 1rem;
+}
+header h1 {
+    margin: 0;
+    color: #ffccff;
+    text-align: center;
+}
+header small {
+    font-size: .9rem;
+    font-weight: normal;
+    display: block;
+}
+.top-sociais {
+    padding: 1rem;
+    margin-left: auto;
+}
+.top-sociais a {
+    font-size: 2rem;
+    color: #ccc;
+    border-radius: .3rem;
+}
+
+/* nav */
+nav {
+    background: #000;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px dotted grey;
+    border-bottom: 1px dotted grey;
+}
+nav a {
+    color: #aaa;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: .5rem 1rem;
+}
+nav a:hover {
+    color: #000;
+    background: #aaa;
+}
+nav a:first-child {
+    margin-right: auto;
+}
+
+/* footer */
+footer {
+    background: #660066;
+    color: #ffe6ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer a {
+    padding: .5rem;
+    color: #ffe6ff;
+}
+footer a:hover {
+    color: #660066;
+    background: #ffe6ff;
+}
+footer div {
+    text-align: center;
+}
+
+/* main */
+main {
+    background: rgba(0,0,0,.7);
+    overflow: auto;
+    padding: 0 1rem;
+    color: #ddd;
+    line-height: 1.4;
+}
+main figure {
+    margin: 0;
+    padding: .3rem;
+    border: 1px dotted grey;
+    display: table;
+    text-align: center;
+}
+main figure img {
+    display: block;
+}
+main figure figcaption {
+    display: block;
+    margin-top: .3rem;
+    font-size: .8rem;
+}
+.float-left {
+    float: left;
+    margin-right: 1rem;
+}
+.float-right {
+    float: right;
+    margin-left: 1rem;
+}
+.float-center {
+    margin: auto;
+}
